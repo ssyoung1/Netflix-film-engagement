@@ -1,25 +1,12 @@
-# Netflix-film-engagement
-netflix-film-engagement/
-│
-├── data/
-│   └── netflix_movies.csv
-│
-├── notebooks/
-│   └── netflix_analysis.ipynb
-│
-├── images/
-│   └── popularity_vs_success.png
-│
-├── requirements.txt
-└── README.md
-pandas
-matplotlib
-numpy
-jupyter
 # 🎬 Netflix Film Engagement Analysis
 
 ## Project Overview
-This project analyzes Netflix film data to identify which factors contribute most to a movie’s success. Using data mining techniques, the analysis explores relationships between popularity, budget, and viewer ratings.
+This project uses Python data analysis to explore what factors contribute to film success. We focus on relationships like **Popularity vs Success** because it gives a clear, presentation-ready visualization.
+
+✅ **Click here to open the website page:**  
+👉 **[Popularity vs Success (Web Page)](docs/popularity_vs_success.html)**
+
+> If you want this to open as a real public URL (GitHub Pages), follow the steps under **GitHub Pages Setup** below.
 
 ---
 
@@ -32,25 +19,38 @@ This project analyzes Netflix film data to identify which factors contribute mos
 ---
 
 ## Project Structure
-- `data/` contains the movie dataset
-- `notebooks/` contains the analysis notebook
-- `images/` contains visualizations used in the analysis
+- `data/` dataset (replace with your real file when ready)
+- `notebooks/` Jupyter notebook analysis
+- `images/` saved charts
+- `docs/` simple web page for the Popularity vs Success visualization
 
 ---
 
 ## How to Run This Project
-1. Clone the repository  
-2. Install required libraries using:
-3. Open the Jupyter Notebook:
-4. Run all cells to reproduce the analysis
+1. Clone the repo
+2. Install packages:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the notebook:
+   ```
+   jupyter notebook notebooks/netflix_analysis.ipynb
+   ```
 
 ---
 
-## Key Insights
-- Popularity shows a strong relationship with film success
-- Budget and vote average also influence performance
-- Visualizations help clearly demonstrate these trends
+## GitHub Pages Setup (so the link opens as a public website)
+1. Go to your repo on GitHub → **Settings**
+2. Click **Pages** (left sidebar)
+3. Under **Build and deployment**, set:
+   - Source: **Deploy from a branch**
+   - Branch: **main**
+   - Folder: **/docs**
+4. Click **Save**
+5. After GitHub publishes it, your page will be at:
+   `https://YOUR-USERNAME.github.io/YOUR-REPO/popularity_vs_success.html`
 
-📈 Example Visualization:
+---
 
-![Popularity vs Success](images/popularity_vs_success.png)
+## Key Insight (Why Popularity vs Success)
+Popularity is one of the most direct signals of how much attention a film is getting. In our visuals, it was the easiest relationship to see quickly and explain clearly in a client-style presentation.
